@@ -18,6 +18,7 @@ RUN apk add --update \
 	php-mysqli \
 	php-openssl \
 	php-pdo \
+	php-pdo_mysql \
 	php-pdo_pgsql \
 	php-pgsql \
 	php-posix \

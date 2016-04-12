@@ -42,5 +42,3 @@ RUN curl -L -O http://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz && \
 	 && gunzip /app/htdocs/misc/GeoIPCity.dat.gz
 
 VOLUME /app/htdocs/config
-
-EXPOSE 5000

@@ -19,8 +19,11 @@ dokku mariadb:link piwik-db piwik
 Then push the contents of this repository to your dokku git endpoint. When configuring the database, use the following settings:
 
 **Database Hostname:** `dokku-mariadb-piwik-db`
+
 **Database Username:** `mariadb`
+
 **Database Password:** (use `dokku mariadb:info piwik-db` to query database information. Your password is between `mariadb:` and `@dokku-mariadb-piwik-db` in the `DSN:` string.)
+
 **Database Name:** `piwik-db`
 
 You can use [dokku-letsencrypt](https://github.com/dokku/dokku-letsencrypt) to enable HTTPS so that statistics for HTTPS websites can be gathered.

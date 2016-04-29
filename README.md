@@ -1,6 +1,6 @@
 # mini-piwik
 
-A minimal Docker image based on [docker-mini-php](https://github.com/sseemayer/docker-mini-php) for [Piwik](https://piwik.org) designed for comfortable deploying on [Dokku](http://dokku.viewdocs.io/dokku/).
+A minimal Docker image based on [docker-mini-php](https://github.com/sseemayer/docker-mini-php) for [Piwik](https://piwik.org) designed for comfortable deploying on [Dokku](http://dokku.viewdocs.io/dokku/). Contains the GeoLite data created by MaxMind, available from http://www.maxmind.com.
 
 
 ## Running in dokku

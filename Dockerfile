@@ -41,6 +41,4 @@ RUN curl -L -O http://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz && \
     curl -fsSL -o /app/htdocs/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz \
 	 && gunzip /app/htdocs/misc/GeoIPCity.dat.gz
 
-ADD nginx.conf.sigil /app/htdocs
-
 VOLUME /app/htdocs/config

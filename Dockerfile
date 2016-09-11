@@ -28,7 +28,7 @@ RUN apk add --update \
 	php-zlib \
 	&& rm -rf /var/cache/apk/* 
 
-ENV PIWIK_VERSION 2.16.1
+ENV PIWIK_VERSION 2.16.2
 
 RUN curl -L -O http://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz && \
     tar -xzf piwik-${PIWIK_VERSION}.tar.gz && \

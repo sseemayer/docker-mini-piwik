@@ -1,5 +1,8 @@
 FROM sseemayer/mini-php:latest
 
+#	missing packages
+#	php-geoip@testing \
+
 RUN apk add --update \
 	curl \
 	php-common \
@@ -7,7 +10,6 @@ RUN apk add --update \
 	php-curl \
 	php-dom \
 	php-gd \
-	php-geoip@testing \
 	php-gettext \
 	php-iconv \
 	php-imap \
@@ -28,7 +30,7 @@ RUN apk add --update \
 	php-zlib \
 	&& rm -rf /var/cache/apk/* 
 
-ENV PIWIK_VERSION 2.16.2
+ENV PIWIK_VERSION 3.0.0
 
 RUN curl -L -O http://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz && \
     tar -xzf piwik-${PIWIK_VERSION}.tar.gz && \
